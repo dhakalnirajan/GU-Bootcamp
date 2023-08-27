@@ -1,0 +1,18 @@
+.card {
+    width: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.card-img {
+    height: 350px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+
+.card-body {
+    pad: 20px;
+}

@@ -24,3 +24,12 @@ Differences between `undefined` and `null`
 
 
 Array:
+
+
+Classes and objects of JavaScript are syntactic sugar.
+
+Syntactic sugar is a programming language feature that provides syntactic
+convenience. It makes the language more palatable, and easier to write.
+
+Syntactic sugar is not a new concept. It is a well-established practice in
+computer programming.

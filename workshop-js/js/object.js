@@ -93,3 +93,13 @@ const PersonFive = {
 };
 
 console.log (PersonFive);
+
+const person = {
+  name: 'ram',
+  age: 20,
+  address: 'Pokhara',
+  talk: function () {
+    console.log ('Talk');
+  },
+};
+console.log (person.talk ());
