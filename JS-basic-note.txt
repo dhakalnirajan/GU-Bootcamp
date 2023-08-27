@@ -1,0 +1,26 @@
+JavaScript Version: ECMAScript6 [ES6] (Released in 2015)
+
+Notes
+---------------------------------------------------------------
+
+Variables: Memory location
+
+    var: (Declaring variables - Released since 1996)
+    let: (Declaring variables - Released since ES6)
+    const: (Declaring variables - Released since ES6)
+
+
+Operators:
+
+    1. Arithmetic Operator: +, -, *, /,  %, ++, --
+    2. Assignment Operator: =, +=, -=, *=, /=, %=
+    3. Comparison Operator: ==, !=, ===, !==, >, <, >=, <=
+    4. Logical Operator: &&, ||, !
+    5. Bitwise Operator:  &, |, ^, ~, <<, >>
+    6. Ternary Operator: ? :
+
+Differences between `undefined` and `null`
+
+
+
+Array:
