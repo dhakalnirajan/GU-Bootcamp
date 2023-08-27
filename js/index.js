@@ -14,20 +14,6 @@ let names = ['Nirajan', 'Dhakal'];
 
 console.log ('My Name is: ', names[0], names[1]);
 
-// Object
-
-let person = {
-  name: 'Nirajan',
-  age: 20,
-  gender: 'Male',
-};
-
-console.log ('Name is: ', person.name);
-console.log ('Age is: ', person.age);
-console.log ('Gender is: ', person.gender);
-
-console.log (typeof person.name);
-
 // Functions
 
 // Greet (static)
@@ -101,3 +87,15 @@ function display (item) {
 }
 
 display ([2, 3, 4]);
+
+// Array value replacing
+
+let arr = 10;
+
+arr = 20;
+
+let numbers = [10, 20, 30];
+
+numbers[0] = 50;
+
+console.log (numbers);
