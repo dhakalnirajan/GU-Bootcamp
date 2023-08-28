@@ -1,6 +1,7 @@
 .card {
+    padding: 20px;
     width: 350px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-img {
@@ -10,9 +11,17 @@
 .card-img img {
     height: 100%;
     width: 100%;
-    object-position: center;
+    object-fit: cover;
 }
 
 .card-body {
     pad: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: crimson;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 25px;
 }

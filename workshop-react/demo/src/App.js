@@ -1,14 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import './card/card.css';
+import Card from './card/card';
 
 function App () {
-  return (<div className="card">
-    <div className="card-img">
-      <img src="{logo}"></img>
+  const cards = ['Pokhara', 'Kathmandu', 'Butwal'];
+
+  return (
+    <div className="App">
+      {cards.map (item => {
+        return <Card item={item} />;
+      })}
     </div>
-  </div>;
   );
-};
+}
 
 export default App;
