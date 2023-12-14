@@ -1,7 +1,15 @@
+import React from 'react';
 import './App.css';
 
 import Days from './days/Days';
-function App (){
+import Display from './display/Display';
+import Card from './card/card';
+import Clock from './clock/Clock';
+import Todo, { Read } from './todo/Todo';
+import Counter from './counter/Counter';
+import Hook from './hook/Hook';
+
+function App() {
   const days = [
     'Sunday',
     'Monday',
@@ -11,76 +19,46 @@ function App (){
     'Friday',
     'Saturday',
   ];
-  return (
-    <>
-      <Days />
-      <Days days = {days} />
-    </>
-  );
-}
 
-export default App;
+  const displayData = [
+    { name: 'Michael', age: 2000000 },
+    { name: 'Samael', age: 21000000 },
+  ];
 
-import Display from './display/Display';
-
-function App () {
-  return (
-    <>
-      <Display name = {"Michael"} age={2000000}/>
-      <Display name = {"Samael"} age={21000000}/>
-    </>
-  );
-}
-
-export default App;
-
-import './App.css';
-import Card from './card/card';
-import Clock from './clock/Clock';
-import Todo from './todo/Todo';
-import {Read} from "./todo/Todo"
-
-function App () {
   const cards = ['Pokhara', 'Kathmandu', 'Butwal'];
 
   return (
     <div className="App">
       <>
+        <Days />
+        <Days days={days} />
+      </>
+
+      <>
+        {displayData.map((data, index) => (
+          <Display key={index} name={data.name} age={data.age} />
+        ))}
+      </>
+
+      <>
         <Clock />
         <Todo />
         <Read />
       </>
-      {cards.map (item => {
-        return <Card item={item} />;
-      })}
+
+      {cards.map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+
+      <>
+        <Counter />
+      </>
+      
+      <>
+        <Todo />
+      </>
     </div>
   );
-}
-
-export default App;
-
-import Counter from "./counter/Counter";
-import Hook from "./hook/Hook"
-
-function App(){
-  return (
-    <>
-      <Counter />
-    </>
-  );
-}
-
-export default App;
-
-import React from 'react';
-import Todo from './todo/Todo';
-
-function App(){
-  return (
-    <>
-      <Todo />
-    </>
-  )
 }
 
 export default App;
